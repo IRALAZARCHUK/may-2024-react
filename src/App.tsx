@@ -14,6 +14,15 @@ interface Product {
   tags: string[];
   sku: string;
   weight: number;
+  dimensions: Dimensions;
+  warrantyInformation: string;
+  shippingInformation: string;
+  availabilityStatus: string;
+}
+interface Dimensions {
+  width: number;
+  height: number;
+  depth: number;
 }
 
 interface AppState {
